@@ -258,7 +258,7 @@ while Iter<Max_iter+1
 
     end
 
-    disp (num2str(Conv_curve_E(Iter)));
+    
     numOfFeature = numel(find(FoodBPosition==1));
     Iter = Iter + 1;
 end
