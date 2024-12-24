@@ -39,17 +39,65 @@ filePath = datasets{mynumber, 2};
 
 disp([datasetName, ' Data']);
 Data = load(filePath);
-Data = Data';
 
 if mynumber==16
-    y = (Data(:, 2));     
+    y = (Data(:, 2));
     Data(:, 2)=[];
     x = Data;
+
+elseif mynumber==5
+
+    x = (Data(:, 1:end-1));
+    y = (Data(:, end));
+
+    k = find(y==0);
+    y(k) = 2;
+    Data = [x y];
+    
+elseif mynumber==8
+
+    x = (Data(:, 1:end-1));
+    y = (Data(:, end));
+
+    k = find(y==0);
+    y(k) = 2;
+    Data = [x y];
+
+elseif mynumber==9
+
+    x = (Data(:, 1:end-1));
+    y = (Data(:, end));
+
+    k = find(y==0);
+    y(k) = 2;
+    Data = [x y];
+
+elseif mynumber==10
+
+    x = (Data(:, 1:end-1));
+    y = (Data(:, end));
+
+    k = find(y==0);
+    y(k) = 2;
+    Data = [x y];
+
+elseif mynumber==13
+
+    x = (Data(:, 1:end-1));
+    y = (Data(:, end));
+
+    k = find(y==0);
+    y(k) = 3;
+    Data = [x y];
+
+
 else
 
-    x = (Data(:, 1:end-1)); 
-    y = (Data(:, end));     
+    x = (Data(:, 1:end-1));
+    y = (Data(:, end));
 end
+
+Data = Data';
 
 
 % تنظیم داده‌ها
