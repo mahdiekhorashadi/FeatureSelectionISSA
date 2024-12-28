@@ -8,7 +8,7 @@ datasets = {
     'Credit', 'dataset/card.txt';
     'Spambase', 'dataset/spambase.data';
     'Heart', 'dataset/heart.txt';
-    'Breast Cancer Wisconsin', 'dataset/lymphography.data';
+    'Breast Cancer Wisconsin', 'dataset/breast-cancer-wisconsin.data';
     'SPECT', 'dataset/SPECT.train';
     'Vote', 'dataset/vote.data';
     'Australian', 'dataset/australian.dat';
